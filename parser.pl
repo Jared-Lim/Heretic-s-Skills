@@ -3,6 +3,9 @@
 use Time::HiRes qw(usleep nanosleep);
 
 while(<>){
-	print $_;
-	usleep(100000);
+	chomp $_;
+	if($_ !~ /registerSkill/ && $_ !~ /\}\)\;/){
+		print $_."\n";
+		usleep(100000);
+	}
 }
