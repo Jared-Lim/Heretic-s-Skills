@@ -292,7 +292,6 @@ registerSkill({
 	"effect": "1-3 medium Phys attacks. Inflicts Panic. Target: Multi-enemies"
 });
 
-/*
 registerSkill({
 	"nameJP": "キャロルヒット",
 	"nameEN": "Carrol Hit",
@@ -306,7 +305,6 @@ registerSkill({
 	"strengthen": -1,
 	"effect": "lost child"
 });
-*/
 
 registerSkill({
 	"nameJP": "テタノスカット",
