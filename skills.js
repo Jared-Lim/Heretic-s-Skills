@@ -921,8 +921,7 @@ registerSkill({
 	"hit": "-",
 	"target": "Multi-enemies",
 	"strengthen": -1,
-	"effect": "-",
-	"notes": "1-5 medium Ice attacks. Target: Multi-enemies"
+	"effect": "1-5 medium Ice attacks. Target: Multi-enemies"
 });
 
 registerSkill({
@@ -1342,8 +1341,7 @@ registerSkill({
 	"hit": "-",
 	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-",
-	"notes": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment."
+	"effect": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment."
 });
 
 registerSkill({
@@ -1357,8 +1355,7 @@ registerSkill({
 	"hit": "-",
 	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-",
-	"notes": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment."
+	"effect": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment."
 });
 
 registerSkill({
