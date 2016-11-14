@@ -1,0 +1,2 @@
+    254 "nameJP" "nameEN" "attribute" "cost" "power" "hits" "kuli" "hit" "target" "strengthen" "effect" 
+      3 "nameJP" "nameEN" "attribute" "cost" "power" "hits" "kuli" "hit" "target" "strengthen" "effect" "notes" 
