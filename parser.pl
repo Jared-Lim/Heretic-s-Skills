@@ -4,8 +4,12 @@ use Time::HiRes qw(usleep nanosleep);
 
 while(<>){
 	chomp $_;
-	if($_ !~ /registerSkill/ && $_ !~ /\}\)\;/){
-		print $_."\n";
-		usleep(100000);
+	if($_ !~ /^registerSkill\(\{/ && $_ !~ /^\}\)\;/){
+		if($_ =~ /\t(\".*\")(\:.*)/){
+			print $1." ";
+		}elsif($_ =~ /\s/){
+			print "\n";
+		}
 	}
+	usleep(100000);
 }
