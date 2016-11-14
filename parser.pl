@@ -1,3 +1,8 @@
 #!/usr/bin/perl -w
 
-print "Hello?\n";
+use Time::HiRes qw(usleep nanosleep);
+
+while(<>){
+	print $_;
+	sleep(100000);
+}
