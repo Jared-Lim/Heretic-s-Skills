@@ -4,5 +4,5 @@ use Time::HiRes qw(usleep nanosleep);
 
 while(<>){
 	print $_;
-	sleep(100000);
+	usleep(100000);
 }
