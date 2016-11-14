@@ -1,1 +1,1 @@
-# Heretic-s-Skills
+# Heretic's Skills
