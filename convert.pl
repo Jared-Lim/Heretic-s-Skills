@@ -8,26 +8,18 @@ if(-e "output"){
 	print "created output directory\n";
 }
 sleep(1);
-
 $count = 1;
-
-print "--------------------------\n";
-print "\tSkill ".$count."\n";
-print "--------------------------\n";
-
 while(<>){
 	chomp $_;
 	if($_ =~ /registerSkill/){
-		print "{\n";
+		open(FILE,'>'."output/skill-".$count);
+		print FILE "{\n";
 	}elsif($_ =~ /\}\)\;/){
-		print "}\n";
+		print FILE "}\n";
 	}elsif($_ =~ /^\s$/){
+		close FILE;
 		$count++;
-		print "--------------------------\n";
-		print "\tSkill ".$count."\n";
-		print "--------------------------\n";
 	}else{
-		print $_."\n";
+		print FILE $_."\n";
 	}
-	usleep(100000);
 }
