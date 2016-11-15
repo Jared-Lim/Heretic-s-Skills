@@ -8,6 +8,10 @@ foreach(@skills){
 	$filename=$_;
 	open(FILE,"output/".$filename);
 	@lines = <FILE>;
-	print @lines[2];
+	if($lines[2] =~ /(.*): \"(.*)\"/){
+		$skill = $2;
+		$skill =~ s/\s/\_/;
+		print $skill."\n";
+	}
 	close FILE;
 }
