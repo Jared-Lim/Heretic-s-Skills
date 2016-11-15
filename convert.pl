@@ -12,7 +12,13 @@ $count = 1;
 while(<>){
 	chomp $_;
 	if($_ =~ /registerSkill/){
-		open(FILE,'>'."output/skill-".$count);
+		if($count < 10){
+			open(FILE,'>'."output/skill-00".$count."\.json");
+		}elsif($count < 100){
+			open(FILE,'>'."output/skill-0".$count."\.json");
+		}else{
+			open(FILE,'>'."output/skill-".$count."\.json");
+		}
 		print FILE "{\n";
 	}elsif($_ =~ /\}\)\;/){
 		print FILE "}\n";
