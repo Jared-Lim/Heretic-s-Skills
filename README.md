@@ -8,8 +8,8 @@ According to results.txt, there are 11 variables
 >cost  
 >power  
 >hits  
->kuli (???)  
->hit  
+>kuli (CRIT CHANCE)  
+>hit  (ACCURACY)  
 >target  
 >strengthen  
 >effect 
