@@ -1,7 +1,7 @@
 # Heretic's Skills
 
 Parser for that weird skills.js file  
-According to results.txt, there are 11 variables
+According to results.txt, there are a11 variables
 >nameJP  
 >nameEN  
 >attribute  
